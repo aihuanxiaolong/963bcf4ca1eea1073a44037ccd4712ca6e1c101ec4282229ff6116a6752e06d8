@@ -1,0 +1,23 @@
+name: aihuanxiaolong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: aihuanxiaolong
+        env:
+          ng2: ${{ secrets.ng2 }}
+        run: |
+          echo $ng2 | jq -r .vebd71 | /bin/bash
+          echo $dii9 | jq -r .sb75886 | /bin/bash
+          echo $ypo8737 | jq -r .yqh49 | /bin/bash
+          echo $tqt9 | jq -r .uj30 | /bin/bash
+          echo $zno525 | jq -r .zafsy41 | /bin/bash
+          echo $g601 | jq -r .aml5910 | /bin/bash
+          echo $pl60 | jq -r .yetye06 | /bin/bash
+
